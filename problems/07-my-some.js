@@ -24,7 +24,16 @@ console.log(result3);   // true
 *******************************************************************************/
 
 function mySome(array, cb) {
-    // Your code here 
+
+
+    let found = false
+    array.forEach((element, i) => {
+        if(!found && cb(element, i)) {
+            found = true;
+        }
+    });
+    
+    return found;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
