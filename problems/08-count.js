@@ -2,6 +2,7 @@
 Write a function `count` that accepts an array and a callback as arguments. The
 function should return the number of elements of the array that return true when
 passed to the callback.
+ocdeeedfakdmkfa
 
 Examples:
 
@@ -27,7 +28,7 @@ console.log(result4); // 0
 *******************************************************************************/
 
 function count(array, cb) {
-  // Your code here 
+  // Your code here
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
