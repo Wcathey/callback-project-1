@@ -20,7 +20,15 @@ console.log(result2);      // ['choose', 'words', 'only']
 *******************************************************************************/
 
 function myFilter(array, cb) {
-    // Your code here 
+    let newArr = [];
+
+    array.forEach((element) => {
+        if(cb(element)) {
+            newArr.push(element);
+        }
+
+    });
+    return newArr;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
