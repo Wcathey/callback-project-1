@@ -2,10 +2,7 @@
 Write a function `count` that accepts an array and a callback as arguments. The
 function should return the number of elements of the array that return true when
 passed to the callback.
-ocdeeedfakdmkfa
-//ksakdlkakfd
-//another change.
-kakdfkamdfk
+
 
 Examples:
 
@@ -31,8 +28,18 @@ console.log(result4); // 0
 *******************************************************************************/
 
 function count(array, cb) {
-  // Your code here
-}
+  let amount = 0;
+
+    array.forEach((element) => {
+      if(cb(element)) {
+        amount ++;
+      }
+      })
+
+      return amount;
+    }
+
+
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
