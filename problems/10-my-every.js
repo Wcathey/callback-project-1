@@ -22,12 +22,23 @@ console.log(myEvery(['book', 'door', 'pen'], hasO));    // false
 *******************************************************************************/
 
 function myEvery(array, cb) {
-    // Your code here 
+    let count = 0;
+    array.forEach((element) => {
+        if (cb(element)) {
+            count += 1;
+        }
+    });
+    if (count === array.length) {
+        return true;
+    }
+    return false;
 }
+
+
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
     module.exports = myEvery;
-  } catch(e) {
+} catch (e) {
     return null;
-  }
+}
