@@ -19,7 +19,11 @@ console.log(arr2); // [ 0, 9, 20 ]
 *******************************************************************************/
 
 function mapMutator(array, cb) {
-  // Your code here 
+  let newArr = [];
+  array.forEach((element, i) => {
+    newArr.push(cb(element, i))
+  });
+return newArr;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/

@@ -32,7 +32,13 @@ console.log(
 *******************************************************************************/
 
 let xorSelect = function(array, cb1, cb2) {
-  // Your code here 
+  let newArr = [];
+  array.forEach((element) => {
+    let byBoth = (cb1(element) && cb2(element));
+    let byOne = (cb1(element) || cb2(element));
+    if(byOne && !byBoth) newArr.push(element);
+  })
+  return newArr;
 };
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
